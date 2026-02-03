@@ -105,6 +105,7 @@ public class SpiderController : NetworkBehaviour
                 agent.isStopped = false;
                 PlayCrawlSound(1f);
                 SetNewRandomDestination();
+                Debug.Log("anas");
             }
         }
     }
