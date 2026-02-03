@@ -282,10 +282,7 @@ public class SpiderController : NetworkBehaviour
             // Call die logic
             if (isServer && playerHealth != null)
             {
-                if (isServer)
-                {
-                    playerHealth.TakeDamage(100f); // or instant kill
-                }
+                playerHealth.Die();
             }
 
             // Disable player
